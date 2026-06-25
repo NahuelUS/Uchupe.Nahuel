@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/26" fx:controller="controllers.FormularioController">
+   <children>
+      <Label layoutX="39.0" layoutY="42.0" prefHeight="18.0" prefWidth="110.0" text="TipoDeProducto:" />
+      <Label layoutX="39.0" layoutY="83.0" prefHeight="18.0" prefWidth="110.0" text="Proveedor:" />
+      <Label layoutX="39.0" layoutY="127.0" prefHeight="18.0" prefWidth="110.0" text="Codigo:" />
+      <Label layoutX="39.0" layoutY="167.0" prefHeight="18.0" prefWidth="110.0" text="Marca:" />
+      <Label layoutX="39.0" layoutY="205.0" prefHeight="18.0" prefWidth="110.0" text="Modelo:" />
+      <Label layoutX="39.0" layoutY="247.0" prefHeight="18.0" prefWidth="110.0" text="Precio:" />
+      <Label layoutX="39.0" layoutY="292.0" prefHeight="18.0" prefWidth="110.0" text="Stock:" />
+      <Label fx:id="lblDatoExtra" layoutX="39.0" layoutY="338.0" prefHeight="18.0" prefWidth="110.0" text="Label" />
+      <ComboBox fx:id="cbTipo" layoutX="149.0" layoutY="38.0" onAction="#onTipoCambiado" prefHeight="26.0" prefWidth="221.0" />
+      <ComboBox fx:id="cbProveedor" layoutX="149.0" layoutY="79.0" prefHeight="26.0" prefWidth="221.0" />
+      <TextField fx:id="txtCodigo" layoutX="149.0" layoutY="123.0" prefHeight="26.0" prefWidth="222.0" />
+      <TextField fx:id="txtMarca" layoutX="148.0" layoutY="163.0" prefHeight="26.0" prefWidth="222.0" />
+      <TextField fx:id="txtModelo" layoutX="148.0" layoutY="201.0" prefHeight="26.0" prefWidth="222.0" />
+      <TextField fx:id="txtPrecio" layoutX="148.0" layoutY="243.0" prefHeight="26.0" prefWidth="222.0" />
+      <TextField fx:id="txtStock" layoutX="148.0" layoutY="288.0" prefHeight="26.0" prefWidth="222.0" />
+      <TextField fx:id="txtDatoExtra" layoutX="149.0" layoutY="334.0" prefHeight="26.0" prefWidth="222.0" />
+      <Button fx:id="btnAceptar" layoutX="445.0" layoutY="139.0" mnemonicParsing="false" onAction="#aceptar" prefHeight="48.0" prefWidth="110.0" text="Aceptar" />
+      <Button fx:id="btnCancelar" layoutX="445.0" layoutY="264.0" mnemonicParsing="false" onAction="#cancelar" prefHeight="48.0" prefWidth="110.0" text="Cancelar" />
+   </children>
+</AnchorPane>
